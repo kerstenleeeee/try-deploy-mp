@@ -144,9 +144,16 @@
 		<img src="https://i.ibb.co/fv6snd7/logo.png" alt="Paris" style="width:13%; margin-top: 60px">
 		<div class="notfound">
 			<h2>BLUEPRINT NOT FOUND</h2>
-			<p>We are still working on the blueprint for the selected building. Sorry for the inconvenience.</p>
-			<a href="{% url 'home' %}">Go Back</a>
+			<p>We are still working on the blueprint. Sorry for the inconvenience.</p>
+			<!-- <a href="{% url 'home' %}">Go Back</a> -->
+			<button onclick="goBack()">Go Back</button>
 		</div>
 	</div>
+
+<script>
+	function goBack(){
+		window.history.back();
+	}
+</script>
 </body>
 </html>
