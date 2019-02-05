@@ -12,7 +12,7 @@ urlpatterns = [
     #dcs
     url('department-of-computer-science/', views.dcsPageView, name="dcs"),
     #engglib2
-    url('engineering-library-ii/', views.enggLib2PageView, name="engglib21"),
+    url('engineering-library-ii/', views.enggLib2PageView, name="engglib2"),
     #coe
     url('college-of-engineering/', views.coePageView, name="coe"),
     #url(r'^new/$', views.new),
