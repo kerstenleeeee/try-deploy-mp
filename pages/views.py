@@ -35,7 +35,7 @@ def enggLib2PageView(request):
 	try:
 		entriesB = Building.objects.get(buildID='engglib2001')
 		entriesF = Floor.objects.get(buildID='engglib2001', floorID='engglib21')
-		return render(request, 'dcs.html')
+		return render(request, 'engglib2.html')
 	except:
 		return render(request, 'error.html')
 

@@ -433,6 +433,19 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+window.onscroll = function() {newFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function newFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 function filterFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("myInput");
