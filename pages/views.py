@@ -27,7 +27,6 @@ def aboutPageView(request):
 def dcsPageView(request):
 	try:
 		entriesB = Building.objects.get(buildID='dcs001')
-		entriesF = Floor.objects.get(buildID='dcs001', floorID='dcs02')
 		return render(request, 'dcs.html')
 	except:
 		return render(request, 'error.html')
